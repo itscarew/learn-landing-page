@@ -1,0 +1,58 @@
+.information {
+  position: relative;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6rem 0;
+    width: 100%;
+
+    &_item {
+      flex-basis: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 6rem;
+      color: $color-dark;
+
+      &_title {
+        @include smallCapitalLetter;
+        color: $color-dark;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      &_subtitle {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        text-align: center;
+        line-height: 1.2;
+      }
+      &_paragraph {
+        font-size: 1.8rem;
+        margin-bottom: 6rem;
+        text-align: center;
+        color: $color-gray;
+        line-height: 1.5;
+      }
+
+      & button {
+        padding: 1.5rem;
+        width: 60%;
+        background: transparent;
+        border: 0.25rem solid rgba($color-gray, 0.3);
+        border-radius: 50px;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        transition: all 0.2s;
+
+        &:hover {
+          border: 0.25rem solid rgba($color-gray, 1);
+        }
+      }
+    }
+  }
+}

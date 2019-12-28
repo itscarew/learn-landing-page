@@ -1,0 +1,9 @@
+@mixin smallCapitalLetter {
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: $color-light;
+  margin-bottom: 3rem;
+}

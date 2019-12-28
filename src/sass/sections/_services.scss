@@ -1,0 +1,58 @@
+.services {
+  position: relative;
+  height: auto;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-dark, 0.2),
+      rgba($color-dark, 0.2)
+    ),
+    url("/src/images/hero17.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  &__items {
+    padding: 6rem 0;
+    width: 100%;
+
+    &_itemBig {
+      display: flex;
+      flex-direction: column;
+      color: $color-light;
+      width: 100%;
+      margin-bottom: 6rem;
+
+      & h1 {
+        font-size: 5.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      & span {
+        width: 60%;
+        font-size: 2.5rem;
+        line-height: 1.4;
+      }
+    }
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      color: $color-light;
+      width: 40%;
+
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+
+      & h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      & span {
+        font-size: 1.6rem;
+        line-height: 1.4;
+      }
+    }
+  }
+}

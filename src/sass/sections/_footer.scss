@@ -15,14 +15,27 @@
         align-items: flex-start;
         justify-content: space-between;
 
+        @media screen and (min-width: 0px) and (max-width: 800px) {
+          flex-direction: column;
+        }
+
         &_nav {
           display: flex;
           align-items: flex-start;
+
+          @media screen and (min-width: 0px) and (max-width: 800px) {
+            flex-direction: column;
+            width: 100%;
+          }
 
           &_navlist {
             display: flex;
             flex-direction: column;
             margin-right: 10rem;
+
+            @media screen and (min-width: 0px) and (max-width: 800px) {
+              width: 100%;
+            }
 
             &_title {
               font-size: 4rem;
@@ -65,12 +78,21 @@
             text-transform: uppercase;
             letter-spacing: 0.2rem;
             color: $color-light;
+
+            @media screen and (min-width: 0px) and (max-width: 800px) {
+              width: 100%;
+              margin-bottom: 2rem;
+            }
           }
         }
 
         &_newsletter {
           display: flex;
           flex-direction: column;
+
+          @media screen and (min-width: 0px) and (max-width: 800px) {
+            width: 100%;
+          }
 
           &_title {
             @include smallCapitalLetter;
@@ -98,7 +120,7 @@
 
             & input {
               border-radius: 50px 0 0 50px;
-              flex-basis: 75%;
+              width: 75%;
               &::placeholder {
                 color: $color-gray;
               }
@@ -109,7 +131,7 @@
               background: $primary-blue;
               color: $color-light;
               font-weight: 700;
-              flex-basis: 25%;
+              width: 25%;
             }
           }
 
@@ -119,6 +141,10 @@
 
           &_social {
             display: flex;
+
+            @media screen and (min-width: 0px) and (max-width: 800px) {
+              width: 100%;
+            }
 
             & li {
               margin-right: 2.5rem;

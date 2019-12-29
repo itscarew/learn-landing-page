@@ -20,6 +20,10 @@ $color-lighter-gray: #f1f1f1;
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    font-size: 58%;
+  }
 }
 
 body {
@@ -64,4 +68,8 @@ button {
   width: 85%;
   margin: auto;
   position: relative;
+
+  @media screen and (min-width: 0px) and (max-width: 800px) {
+    width: 90%;
+  }
 }

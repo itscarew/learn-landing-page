@@ -8,6 +8,10 @@
     padding: 6rem 0;
     width: 100%;
 
+    @media screen and (min-width: 0px) and (max-width: 800px) {
+      flex-direction: column;
+    }
+
     &_item {
       flex-basis: 35%;
       display: flex;
@@ -17,10 +21,14 @@
       margin: 6rem;
       color: $color-dark;
 
+      @media screen and (min-width: 0px) and (max-width: 800px) {
+        width: 100%;
+      }
+
       &_title {
         @include smallCapitalLetter;
         color: $color-dark;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-bottom: 2rem;
       }
       &_subtitle {
@@ -29,6 +37,11 @@
         margin-bottom: 3rem;
         text-align: center;
         line-height: 1.2;
+
+        @media screen and (min-width: 0px) and (max-width: 800px) {
+          width: 100%;
+          font-size: 2rem;
+        }
       }
       &_paragraph {
         font-size: 1.8rem;
@@ -36,6 +49,10 @@
         text-align: center;
         color: $color-gray;
         line-height: 1.5;
+
+        @media screen and (min-width: 0px) and (max-width: 800px) {
+          font-size: 1.7rem;
+        }
       }
 
       & button {

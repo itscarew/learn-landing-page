@@ -437,9 +437,10 @@ button {
         font-size: 1.2rem;
         text-transform: capitalize;
         font-weight: 700;
-        transition: all 0.2s; }
+        transition: all 0.4s; }
         .information__items_item button:hover {
-          border: 0.25rem solid #767676; }
+          border: 0.25rem solid #767676;
+          transform: scale(1.1); }
 
 .testimonial {
   position: relative; }
@@ -612,9 +613,12 @@ button {
             .footer__items_top_item_newsletter_social li {
               margin-right: 2.5rem; }
               .footer__items_top_item_newsletter_social li a {
-                color: #767676; }
+                color: #767676;
+                transition: all 0.2s; }
                 .footer__items_top_item_newsletter_social li a i {
                   font-size: 1.7rem; }
+                .footer__items_top_item_newsletter_social li a:hover {
+                  color: #fff; }
     .footer__items_bottom {
       width: 100%;
       background-color: #181818;

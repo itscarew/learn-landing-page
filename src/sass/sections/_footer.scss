@@ -150,8 +150,13 @@
               margin-right: 2.5rem;
               & a {
                 color: $color-gray;
+                transition: all 0.2s;
                 & i {
                   font-size: 1.7rem;
+                }
+
+                &:hover {
+                  color: $color-light;
                 }
               }
             }

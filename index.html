@@ -11,18 +11,20 @@
       rel="stylesheet"
     />
 
-    <script
-      src="https://kit.fontawesome.com/3c3d32c537.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="/src/css/animate.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Learn</title>
   </head>
   <body>
     <!-- SECTION FOR NAVIGATION SELECTOR -->
     <section>
-      <div class="selector">
+      <div class="selector  ">
         <input type="checkbox" class="selector_checkbox" id="selector-toggle" />
-        <label for="selector-toggle" class="selector_button"
+        <label
+          for="selector-toggle"
+          class="animated infinite pulse delay-1s selector_button"
           ><span class="selector_icon">
             &nbsp;
           </span></label
@@ -60,13 +62,17 @@
         <nav class="banner__navbar">
           <div class="container">
             <div class="banner__navbar_items">
-              <div class="banner__navbar_items_logo">Learn.</div>
+              <div
+                class="animated rubberBand delay-10s  banner__navbar_items_logo"
+              >
+                Learn.
+              </div>
             </div>
           </div>
         </nav>
         <div class="banner__intro">
           <div class="container">
-            <div class="banner__intro_items">
+            <div class="animated fadeIn delay-1s banner__intro_items">
               <div class="banner__intro_items_text">
                 <span class="banner__intro_items_text_big"> Learn.</span>
                 <span class="banner__intro_items_text_small"
@@ -100,7 +106,11 @@
                 labore et dolore magna aliqua.
               </div>
             </div>
-            <div class="about__items_lists">
+            <div
+              data-aos="fade-up  "
+              data-aos-duration="1500"
+              class="about__items_lists"
+            >
               <div class="about__items_lists_list">
                 <i class="fas fa-code"></i>
                 <span class="about__items_lists_list_title"
@@ -208,7 +218,7 @@
     <!-- SECTION FOR INFORMATION -->
 
     <!-- SECTION FOR TESTIMONIAL -->
-    <section>
+    <section data-aos="fade-right" data-aos-duration="1500">
       <div class="testimonial">
         <div class="container">
           <div class="testimonial__items">
@@ -312,5 +322,14 @@
       </footer>
     </section>
     <!-- SECTION FOR FOOTER -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3c3d32c537.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
